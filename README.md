@@ -4,7 +4,7 @@ Create a project which allows the following functionality. Test your functionali
 
 I am going to clone your project and run npm install and npm test in order to run your tests.
 
-You can clone this project and sent me the link to the repo, or you can just create your own project. Call your project CE-9053-Banking-<your last name>.
+You can clone this project and send me the link to the repo, or you can just create your own project. Call your project CE-9053-Banking-<your last name>.
 
 
 ## BankAccount Creation 
