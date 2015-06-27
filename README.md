@@ -2,7 +2,12 @@
 
 Create a project which allows the following functionality. Test your functionality with jasmine tests. Use jasmine-node create a module for your BankAccount object.
 
-I am going to clone your project and run npm install and npm test in order to run your tests.
+I am going to do the following when I run your project:
+
+* I am going to fork your project
+* I am going to run npm install
+* I am going to run npm test - this will run the jasmine-node test commands
+* I will make edits and push the changes up to forked repository
 
 You can clone this project and send me the link to the repo, or you can just create your own project. Call your project CE-9053-Banking-[your last name].
 
