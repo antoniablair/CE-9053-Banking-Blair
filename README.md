@@ -44,17 +44,17 @@ bankAccount = new BankAccount({
 });//should throw an exception
 
 bankAccount = new BankAccount({
-    id: 'abc',
+    accountId: 'abc',
     balance: -1
 });//should throw an exception
 
 bankAccount = new BankAccount({
-    id: 'abc',
+    accountId: 'abc',
     balance: 'bar' 
 });//should throw an exception
 
 bankAccount = new BankAccount({
-    id: 'abc',
+    accountId: 'abc',
     locked: 'foo'
 });//should throw an exception
 ```
