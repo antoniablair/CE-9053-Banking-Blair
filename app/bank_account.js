@@ -4,7 +4,7 @@ function BankAccount(cfg) {
     // check for config parameter. If config does not exist or config is not an object 
     // or config keys
     if(!cfg || typeof cfg !== 'object' || Object.keys(cfg).length <= 0) {
-        throw "Config parameter must be a non-empty object";
+        throw "Cannot create a BankAccount if config parameter is an empty object";
     }
     // check for a defined balance
     if(cfg.balance && (cfg.balance < 0 || typeof cfg.balance !== 'number')) {
@@ -16,6 +16,7 @@ function BankAccount(cfg) {
     }
     // check to make sure account ID exists or is set
     if(!cfg.accountId) {
+        // If it doesn't, give them a random ID number
         this.accountId = Math.floor(Math.random() * 90000) + 10000;
     } else {
         this.accountId = cfg.accountId;
@@ -56,11 +57,14 @@ BankAccount.prototype = {
             else {
                 if (this.balance < 1000) {
                     if ((this.balance - 1) < amount) {
-                        throw "Transactions under $1000 require a $1 fee.                              Negative balance is not allowed after withdrawal.";
+                        throw "Transactions under $1000 require a $1 fee. Negative balance is not allowed after withdrawal.";
                     }
                     else {
-                    this.balance = this.balance - amount - 1;
+                    this.balance = ((this.balance - amount) - 1);
                     }
+                }
+                else {
+                    this.balance = (this.balance - amount);
                 }
             }
         }
@@ -68,12 +72,3 @@ BankAccount.prototype = {
 };
 
 module.exports = BankAccount;
-
-
-
-
-// console.log(account);
-
-// account.withdraw(1);
-
-// console.log(account);

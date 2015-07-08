@@ -9,7 +9,7 @@ I am going to do the following when I run your project:
 * I am going to run npm test - this will run the jasmine-node test commands
 * I will make edits and push the changes up to forked repository
 
-You can clone this project and send me the link to the repo, or you can just create your own project. Call your project CE-9053-Banking-[your last name].
+You can clone this project and send me the link to the repo, or you can just create your own project. Call your project [your last name].
 
 
 ## BankAccount Creation 
